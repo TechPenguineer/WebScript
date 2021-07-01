@@ -1,10 +1,11 @@
-class window {
-    constructor(){
-        this.title = ""
+const window_properties = {
+    title_string:""
+}
+var WebWindow = 
+{
+    title : function(title_str){
+        window_properties.title_string = title_str
     }
-    setTitle(titleStr){
-        this.title = titleStr
-    }
-
 }
 
+console.log(`Title: ${window_properties.title_string}`)
